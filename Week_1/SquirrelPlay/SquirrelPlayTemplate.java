@@ -1,4 +1,4 @@
-package SquirrelPlay;
+package Week_1.SquirrelPlay;
 /*
  * Coding Bat Logic-1: Squirrel Play
  * https://codingbat.com/prob/p141061

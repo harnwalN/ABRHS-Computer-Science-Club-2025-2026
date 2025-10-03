@@ -1,4 +1,4 @@
-package NoTeenSum;
+package Week_2.NoTeenSum;
 /*
  * Coding Bat Logic-2: No Teem Sum
  * https://codingbat.com/prob/p182879
