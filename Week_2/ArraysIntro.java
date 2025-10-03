@@ -1,6 +1,8 @@
 package Week_2;
 
-public class Arrays {
+import java.util.Arrays;
+
+public class ArraysIntro {
     public static void main(String[] args) {
         // Use an initializer list to set values of an array
         int[] numbers = {1, 2, 3, 4, 5};
@@ -13,14 +15,14 @@ public class Arrays {
         // --> moreNumbers: [0, 0, 0] (default values for int array)
 
         // Assign values to specific indices
-        for (int i = 1; i <= moreNumbers.length; i++) {
-            moreNumbers[i] = i;
+        for (int i = 0; i < moreNumbers.length; i++) { // iterates through i = 1, 2, 3
+            moreNumbers[i] = i+1;
         }
         // --> moreNumbers: [1, 2, 3]
 
         System.out.println(moreNumbers[0]); // Prints first element --> 1
 
-
+        // Assignment of values
         String[] moreWords = new String[2];
         // --> moreWords: [null, null] (default value of String)
         moreWords[0] = "Chris";
@@ -31,7 +33,19 @@ public class Arrays {
         System.out.println(moreWords[1]);
         // --> Prints second element --> "Rules"
 
-        System.out.println(numbers.toString());
-        System.out.println(words.toString());
+        // Iterate through and print all elements of the array
+        for (int i = 0; i < moreWords.length; i++) {
+            System.out.println(moreWords[i]);
+        }
+        // --> Prints:
+        // Chris
+        // Rules
+        // 
+
+        // Easier method of checking array contents
+        System.out.println(Arrays.toString(numbers));
+        // --> Prints: [1, 2, 3, 4, 5]
+        System.out.println(Arrays.toString(words));
+        // --> Prints: [Hello, World]
     }
 }
