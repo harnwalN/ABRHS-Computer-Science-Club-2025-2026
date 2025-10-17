@@ -25,5 +25,6 @@ public class NoTeenSumTemplate {
 
     public static int fixTeen(int n) {
         return 0;
+        
     }
 }
